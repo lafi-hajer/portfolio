@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/* =======================
+   VARIABLES COULEURS
+======================= */
+:root {
+    --primary: #8B5CF6;
+    --secondary: #EC4899;
+    --text: #81a4dc;
+    --light: #F8FAFC;
+    --card: #FFFFFF;
+    --shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+/* =======================
+   FOND GLOBAL SECTIONS
+======================= */
+/*.part1,
+.part3,
+.part5 {
+    background: linear-gradient(135deg, #F8FAFC, #FDF2F8, #F3E8FF);
+}*/
+
+/* =======================
+   PART 1 (INTRO)
+======================= */
+.part1 {
+    margin: 0;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img1 {
+    width: 200px;
+    height: auto;
+    transition: .3s;
+}
+
+.img1:hover {
+    transform: scale(1.05);
+}
+
+.part1 h1 {
+    color: var(--primary);
+    font-size: 50px;
+}
+
+.part1 p {
+    color: var(--text);
+    font-size: 25px;
+    max-width: 700px;
+}
+
+/* =======================
+   TITRES GLOBAUX
+======================= */
+.part2 h1,
+.part3 h1,
+.part4 h1,
+.part5 h1 {
+    text-align: center;
+    color: var(--primary);
+    font-size: 45px;
+}
+
+/* =======================
+   ABOUT CARDS
+======================= */
+.carres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.carre {
+    background: var(--card);
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    transition: .3s;
+    text-align: center;
+}
+
+.carre:hover {
+    transform: translateY(-8px);
+}
+
+.carre p {
+    color: var(--text);
+}
+
+/* =======================
+   SKILLS SECTION
+======================= */
+.part3 {
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 250px;
+    background: var(--card);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+    transition: .3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+.skill-card h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.skill-card span {
+    display: inline-block;
+    background: #F3E8FF;
+    color: var(--primary);
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* =======================
+   PROJECTS
+======================= */
+.carre2 {
+    width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: var(--card);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: .3s;
+}
+
+.carre2:hover {
+    transform: translateY(-8px);
+}
+
+.carre2 h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.carre2 p {
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.logo2 {
+    width: 120px;
+    height: auto;
+    margin: 15px 0;
+    transition: .3s;
+}
+
+.logo2:hover {
+    transform: scale(1.08);
+}
+
+/* =======================
+   BUTTON
+======================= */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* =======================
+   CONTACT
+======================= */
+.part5 {
+    margin: 0;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    background: var(--card);
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.rectangle p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--text);
+}
+
+.rectangle i {
+    color: var(--secondary);
+    font-size: 18px;
+}
+
+.carre,
+.skill-card,
+.carre2,
+.rectangle {
+    background: rgba(255, 255, 255, 0.15);
+    /* transparent */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =======================
+   GENERAL FIXES
+======================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* =======================
+   RESPONSIVE MOBILE
+======================= */
+@media (max-width: 768px) {
+
+    /* Titres */
+    h1 {
+        font-size: 28px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    /* Centrage général */
+    .part1,
+    .part3,
+    .part5 {
+        padding: 20px;
+        height: auto;
+    }
+
+    /* Cartes About */
+    .carres {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .carre {
+        width: 90%;
+    }
+
+    /* Skills */
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 90%;
+    }
+
+    /* Projets */
+    .carre2 {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    /* Image intro */
+    .img1 {
+        width: 140px;
+    }
+
+    /* Contact */
+    .rectangle {
+        width: 90%;
+    }
+}
