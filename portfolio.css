@@ -293,7 +293,7 @@ body {
     }
 
     .carre {
-        width: 90%;
+        width: 70%;
     }
 
     /* Skills */
@@ -303,12 +303,12 @@ body {
     }
 
     .skill-card {
-        width: 90%;
+        width: 70%;
     }
 
     /* Projets */
     .carre2 {
-        width: 90%;
+        width: 70%;
         margin: 20px auto;
     }
 
